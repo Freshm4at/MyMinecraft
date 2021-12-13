@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    volumes:
+      - "mc:/data"
+    env_file:
+      - .env
+    restart: always
+
+volumes:
+  mc: {}
