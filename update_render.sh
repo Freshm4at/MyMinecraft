@@ -21,6 +21,7 @@ if [ -f .env ]; then
   docker run \
   --rm \
   -e MINECRAFT_VERSION=${MINECRAFT_VERSION} \
+  -e ADDITIONAL_ARGS="--no-tile-checks"
   -v ~/MyMinecraft/minecraft-data:/home/minecraft/server/:ro \
   -v ~/MyMinecraft/mapOverview:/home/minecraft/render/:rw \
   -m 6G \
