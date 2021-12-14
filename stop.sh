@@ -15,7 +15,7 @@ printf "$yellow" "
 "
 screen -S minecraft-render -X quit
 screen -S minecraft-server -X quit
-sudo docker stop nginx-maprender
-sudo docker rm nginx-maprender
-sudo docker-compose down
+docker stop nginx-maprender
+docker rm nginx-maprender
+docker-compose down
 printf "$red" "Server and render server are stoped"
