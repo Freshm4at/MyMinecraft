@@ -15,11 +15,12 @@ printf "$yellow" "
 "
 if [ -f .env ]; then
     printf " "
-    printf "$green" "Services starting..."
-    printf "$green" "Minecraft server..."
-    printf "$green" "Map render service..."
+    printf "$green" "Preparing render..."
     screen -dmS minecraft-render
 	screen -S minecraft-render -X stuff 'sh start_map_render.sh\n'
-    screen -dmS minecraft-server
-	screen -S minecraft-server -X stuff 'sh start_server.sh\n'
+    printf "$yellow" "Render started in screen minecraft-render"
+    printf "$yellow" "Go into and enter your user password."
+    printf "$yellow" "ex : screen -r minecraft-render"
+    printf "$green" "Minecraft server starting..."
+    sudo docker-compose up
 fi
