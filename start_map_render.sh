@@ -19,4 +19,4 @@ mkdir ~/MyMinecraft/mapOverview
 sh ~/MyMinecraft/docker/run_map_render.sh
 sh ~/MyMinecraft/docker/run_web_server.sh
 sleep 1m
-exit
+screen -S minecraft-render -X quit

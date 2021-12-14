@@ -50,13 +50,13 @@ if [ -f .env ]; then
     fi
     screen -dmS minecraft-render
     screen -S minecraft-render -X stuff 'sh start_map_render.sh\n'
-    printf "$yellow" "Render started in screen minecraft-render"
+    printf "$green" "Render started in screen minecraft-render"
     printf "$yellow" "Go into and enter your user password."
     printf "$yellow" "ex : screen -r minecraft-render"
     printf "$yellow" "-----------------------------------------"
     screen -dmS minecraft-server
     screen -S minecraft-server -X stuff 'sh start_server.sh\n'
-    printf "$yellow" "Minecraft server started in screen minecraft-server"
+    printf "$green" "Minecraft server started in screen minecraft-server"
     printf "$yellow" "Go into and enter your user password."
     printf "$yellow" "ex : screen -r minecraft-server"
 fi

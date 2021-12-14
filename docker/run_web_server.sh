@@ -5,6 +5,8 @@ yellow='\e[1;33m%s\e[0m\n'
 printf "$yellow" " ###### Minecraft Server - WEB SERVER ######"
 if [ -f .env ]; then
 export $(cat .env | grep -v '#' | awk '/=/ {print $1}')
+docker stop nginx-maprender
+docker rm nginx-maprender
   printf "$yellow" "Lauch of the web server for render"
   printf "$yellow" "Wait..."
   docker run \
