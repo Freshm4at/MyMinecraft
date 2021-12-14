@@ -14,5 +14,6 @@ printf "$yellow" "
     
 "
 rm -r mapOverview
+mkdir mapOverview
 sh stop.sh
 sh start.sh
