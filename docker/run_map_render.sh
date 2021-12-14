@@ -15,3 +15,4 @@ if [ -f .env ]; then
   -m 6G \
   mide/minecraft-overviewer:latest
   printf "$green" "Map render finished!"
+fi
