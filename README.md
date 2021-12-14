@@ -36,13 +36,13 @@ overwrite the file ".env" in the MyMinecraft directory to change the configurati
 The documentation for environnement variables are here : https://github.com/itzg/docker-minecraft-server#server-configuration
 
 ## Installation
-It's simple...
+It's simple...\n
 `sh install.sh`
 
 It will
-1° Check the dependencies
-2° Lauch the minecraft server
-3° Lauch the process to render the server's map and lauch the web server to access it.
+- 1° Check the dependencies
+- 2° Lauch the minecraft server
+- 3° Lauch the process to render the server's map and lauch the web server to access it.
 
 ## Command
 ### Stop
