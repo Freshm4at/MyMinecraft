@@ -19,11 +19,12 @@ if [ -f .env ]; then
   # Load Environment Variables
   export $(cat .env | grep -v '#' | awk '/=/ {print $1}')
   docker run \
-    --rm \
-    -e MINECRAFT_VERSION=${MINECRAFT_VERSION} \
-    -v ~/MyMinecraft/minecraft-data:/home/minecraft/server/:ro \
-    -v ~/MyMinecraft/mapOverview:/home/minecraft/render/:rw \
-    mide/minecraft-overviewer:latest
+  --rm \
+  -e MINECRAFT_VERSION=${MINECRAFT_VERSION} \
+  -v ~/MyMinecraft/minecraft-data:/home/minecraft/server/:ro \
+  -v ~/MyMinecraft/mapOverview:/home/minecraft/render/:rw \
+  -m 6G \
+  mide/minecraft-overviewer:latest
   printf "$green" "Map render finished!"
   printf "$yellow" "Lauch of the web server for render"
   printf "$yellow" "Wait..."
