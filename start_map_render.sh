@@ -30,5 +30,6 @@ sudo docker run \
 -p 8080:80 \
 -v ~/Projects/MyMinecraft/mapOverview:/usr/share/nginx/html \
 --hostname nginx-maprender \
+--name nginx-maprender \
 nginx
 printf "$green" "Server listen..."
