@@ -6,10 +6,19 @@ services:
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
     volumes:
-      - "mc:/data"
+      - ./minecraft-data:/data
+      - ./saves-to-import:/worlds:ro
     env_file:
-      - .env
+      - minecraft.env
     restart: always
-
-volumes:
-  mc: {}
+    deploy:
+     resources:
+       limits:
+         memory: 4G
+  minecraft-map:
+    image: mide/minecraft-overviewer:latest
+    environment:
+      - MINECRAFT_VERSION="1.17"
+    volumes:environment:
+      - /home/user/minecraft/:/home/minecraft/server/:ro
+      - /srv/http/minecraft/:/home/minecraft/render/:rw
