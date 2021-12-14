@@ -36,7 +36,7 @@ overwrite the file ".env" in the MyMinecraft directory to change the configurati
 The documentation for environnement variables are here : https://github.com/itzg/docker-minecraft-server#server-configuration
 
 ## Installation
-It's simple...\n
+Run :
 `sh install.sh`
 
 It will
