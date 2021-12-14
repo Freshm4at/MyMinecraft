@@ -47,6 +47,8 @@ It will
 - 2° Lauch the minecraft server
 - 3° Lauch the process to render the server's map and lauch the web server to access it.
 
+Minecraft server and the render process will be lauch in screen. Go to Screen section to explanation.
+
 ## Command
 ### Stop
 To stop the minecraft server and the web server : 
