@@ -14,8 +14,6 @@ printf "$yellow" "
     
 "
 if [ -f .env ]; then
-    printf " "
-    printf "$green" "Preparing render..."
     screen -dmS minecraft-render
 	screen -S minecraft-render -X stuff 'sh start_map_render.sh\n'
     printf "$yellow" "Render started in screen minecraft-render"

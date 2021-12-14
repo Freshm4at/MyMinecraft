@@ -37,3 +37,5 @@ if [ -f .env ]; then
   nginx
   printf "$green" "Server listen..."
 fi
+sleep 1m
+exit
