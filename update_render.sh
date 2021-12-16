@@ -19,7 +19,7 @@ sh ~/MyMinecraft/docker/run_map_render.sh
 sh ~/MyMinecraft/docker/run_web_server.sh
 printf "$green" "Lauching minecraft server..."
 /usr/bin/screen -dmS minecraft-server
-/usr/bin/screen -S minecraft-server -X stuff 'sh start_server.sh\n'
+/usr/bin/screen -S minecraft-server -X stuff "sh start_server.sh\n"
 printf "$yellow" "Minecraft server started in screen minecraft-server"
 printf "$yellow" "Go into and enter your user password."
 printf "$yellow" "ex : screen -r minecraft-server"
