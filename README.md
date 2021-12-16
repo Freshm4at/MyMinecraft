@@ -36,6 +36,9 @@ overwrite the file ".env" in the MyMinecraft directory to change the configurati
 The documentation for environnement variables are here : https://github.com/itzg/docker-minecraft-server#server-configuration
 
 ## Installation
+Clone this repo :
+`git clone https://github.com/Freshm4at/MyMinecraft`
+
 Run :
 `sh install.sh`
 
@@ -43,6 +46,8 @@ It will
 - 1° Check the dependencies
 - 2° Lauch the minecraft server
 - 3° Lauch the process to render the server's map and lauch the web server to access it.
+
+Minecraft server and the render process will be lauch in screen. Go to Screen section to explanation.
 
 ## Command
 ### Stop
