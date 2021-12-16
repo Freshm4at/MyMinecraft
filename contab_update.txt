@@ -1,2 +1,2 @@
 Update tout les jour a 03h00 :
-00 03 * * * ~/MyMinecraft/update_render.sh
+00 03 * * * ${HOME}/MyMinecraft/update_render.sh
