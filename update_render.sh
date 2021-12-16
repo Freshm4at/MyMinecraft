@@ -13,13 +13,13 @@ printf "$yellow" "
     
     
 "
-cd ~/MyMinecraft
-sh stop.sh
+
+sh ~/MyMinecraft/stop.sh
 sh ~/MyMinecraft/docker/run_map_render.sh
 sh ~/MyMinecraft/docker/run_web_server.sh
 printf "$green" "Lauching minecraft server..."
-/snap/bin/docker -dmS minecraft-server
-/snap/bin/docker -S minecraft-server -X stuff 'sh start_server.sh\n'
+/usr/bin/screen -dmS minecraft-server
+/usr/bin/screen -S minecraft-server -X stuff 'sh start_server.sh\n'
 printf "$yellow" "Minecraft server started in screen minecraft-server"
 printf "$yellow" "Go into and enter your user password."
 printf "$yellow" "ex : screen -r minecraft-server"

@@ -4,7 +4,8 @@ green='\e[1;32m%s\e[0m\n'
 yellow='\e[1;33m%s\e[0m\n'
 printf "$yellow" " ###### Minecraft Server - RENDER PROCESS ######"
 cd ~/MyMinecraft 
-cp render/config.py ~/MyMinecraft/minecraft-data
+cp ~/MyMinecraft/render/config.py ~/MyMinecraft/minecraft-data
+mkdir ~/MyMinecraft/mapOverview
 if [ -f .env ]; then
   # Load Environment Variables
   export $(cat .env | grep -v '#' | awk '/=/ {print $1}')
