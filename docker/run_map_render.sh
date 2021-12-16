@@ -8,7 +8,7 @@ cp render/config.py ~/MyMinecraft/minecraft-data
 if [ -f .env ]; then
   # Load Environment Variables
   export $(cat .env | grep -v '#' | awk '/=/ {print $1}')
-  docker run \
+  /snap/bin/docker run \
   --rm \
   -e MINECRAFT_VERSION=${MINECRAFT_VERSION} \
   -e CONFIG_LOCATION="/home/minecraft/server/config.py" \
